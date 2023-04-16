@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0
+    ;
+}
+
+
+
+
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg");
+}
+
+
+
+
+.heading{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    font-size:  2.85em;
+    padding-bottom: 5%;
+    padding-top: 7%;
+    font-style: italic;
+    color: rgba(229, 13, 13, 0.947);
+  
+
+}
+
+
+
+#My-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("");
+
+
+}
+
+
+
+#My-cards .card{
+    position: relative;
+    width: 380px;
+    height: auto;
+    margin: 20px;
+    cursor: pointer;
+
+    transition:  1s ease;
+    background-color: white;
+
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.5);
+
+
+
+
+
+}
+.card:hover{ transform: scale(1.1);}
+
+
+#My-cards .card img{
+    width: 100%;
+}
+
+.card:hover .image{
+    filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+
+#My-cards .middle{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    opacity: 0;
+    color: black;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    filter: brightness(100%);
+}
+
+.middle i{
+    font-size: 70px;
+    color: red;
+}
+
+
+
+#My-cards .card:hover .middle{ 
+    opacity: 1;
+}
+
+@media(max-width: 768px){
+    #My-cards .card{
+        width: 95%;
+    }
+    
+    #My-cards .card:hover{
+        transform: scale(1);
+    }
+}
